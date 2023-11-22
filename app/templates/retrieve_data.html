@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySQL Data Retrieval</title>
+</head>
+<body>
+    <h1>Data from MySQL Database</h1>
+    <h5>{{ value }}</h5>
+    <div id="data-container"></div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function fetchData(){
+          $.ajax({
+                url: "/get_data",  // URL of the Flask route
+                method: "GET",
+                success: function(response) {
+                    var dataContainer = $("#data-container");
+
+                    dataContainer.empty();
+
+                    // Loop through the response data and display it
+                    response.forEach(function(item) {
+                        dataContainer.append(`<p>ID: ${item.id}, Name: ${item.email}</p>`);
+                    });
+
+                },
+                error: function(error) {
+                    console.log(error);
+                },
+                complete: function() {
+                  setTimeout(fetchData, 5000); // Poll every 5 seconds
+                }
+            });
+        }
+        
+        $(document).ready(function () {
+          fetchData(); // Start initial data fetch
+        });
+    </script> -->
+</body>
+</html>

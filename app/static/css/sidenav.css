@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+  
+  .sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    font-family: 'Mulish';
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main-content {
+    margin-left: 260px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    font-family: 'Mulish';
+  }
+
+  .sidenav .icon{
+      display: none;
+  }
+
+  @media screen and (max-width:576px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 10px 5px;
+    }
+
+    .main-content{
+      margin: 0;
+    }
+
+    #azolla-img{
+      display: none;
+    }
+
+    .sidenav a:not(:first-child) {display: none;}
+    .sidenav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .sidenav.responsive {position: relative;}
+    .sidenav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .sidenav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

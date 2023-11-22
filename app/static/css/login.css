@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.login-content{
+    height: 100vh;   
+}
+
+.login-col1{
+    /* background-color: #2C58C0; */
+}
+
+.login-col1 h1{
+    /* color: #FFFFFE; */
+}
+
+.col2-content{
+    font-family: 'Mulish';
+}
+
+@media screen and (max-width: 576px) {
+    .login-col1{
+        display: none;
+    }
+
+    .col2-content-h1{
+        font-size: 30px;
+        font-family: 'Mulish';
+    }
+    
+    .col2-content{
+        padding: 5px;
+    }
+
+    .login-img{
+        width: 250px !important;
+    }
+
+}

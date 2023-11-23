@@ -4,8 +4,8 @@
 #include <DallasTemperature.h>
 
 //  ACCESS POINT CREDENTIALS
-const char* ssid = "PLDTHOMEFIBRgky9c";
-const char* password = "PLDTWIFIry2fp";
+const char* ssid = "AzollaNetwork"; 
+const char* password = "12345678";
 
 // SECRET KEY
 const char* SECRET_KEY = "\"ra^SWIXh(@TJe2+Js4aFfS&X+Lk3yf7\"";
@@ -15,7 +15,7 @@ const int MAIN_CONTAINER_FLOAT = D6;
 const int BACKUP_CONTAINER_FLOAT = D7;
 
 // LED
-const int GREEN_LED = D1;
+const int GREEN_LED = D1; 
 
 // RELAY
 const int RELAY = D2;
@@ -26,7 +26,7 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 // API ENDPOINT FOR ACCEPTING DATA 
-const char* device_status = "http://192.168.1.7:34463/api/get_water_temp";
+const char* device_status = "http://192.168.43.71:34463/api/get_water_temp";
 
 WiFiClient client;
 
@@ -57,12 +57,12 @@ void turnRelayOff(){
 int isMainContainerEmpty(){
   int mainSensorState = digitalRead(MAIN_CONTAINER_FLOAT);
 
-  // // IF CONTAINER IS NOT EMPTY
+  // // IF CONTAINER IS EMPTY
   if (mainSensorState == LOW) {
     return true;
   } 
 
-  // IF CONTAINER IS EMPTY
+  // IF CONTAINER IS NOT EMPTY
   else {
     return false;
   }

@@ -27,7 +27,7 @@ def login():
         try:
             user = Admin.query.filter_by(email = email).first()
         except OperationalError:
-            return "<h1>Database not Found</h1>"
+            return "<center><h1>Database not Found</h1></center>"
 
         if user is not None:
             if email == user.email:
@@ -49,7 +49,7 @@ def login():
                     return response
                 
                 else:
-                    flash("Incorrect Username or Password")
+                    flash("Incorrect Email or Password")
                     return redirect("login")
         else:
             flash("User doesn't exist")

@@ -1,10 +1,1 @@
-@REM EMAIL CONFIGURATION
-@set MAIL_PORT=587
-@set MAIL_SERVER=smtp.gmail.com
-@set MAIL_USERNAME=romeoestoy0101@gmail.com
-@set MAIL_PASSWORD=ekbb ngpx fmcb caxa
-@set MAIL_DEFAULT_SENDER=romeoestoy0101@gmail.com
 
-@REM DATABASE CONFIGURATION
-@set DB_URI=mysql://root@localhost/azolladb
-@set SECRET_KEY="ra^SWIXh(@TJe2+Js4aFfS&X+Lk3yf7"

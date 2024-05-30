@@ -4,8 +4,8 @@
 #include <DallasTemperature.h>
 
 //  ACCESS POINT CREDENTIALS
-const char* ssid = "AzollaNetwork"; 
-const char* password = "12345678";
+const char* ssid = "PLDTHOMEFIBRgky9c"; 
+const char* password = "PLDTWIFIry2fp";
 
 // SECRET KEY
 const char* SECRET_KEY = "\"ra^SWIXh(@TJe2+Js4aFfS&X+Lk3yf7\"";
@@ -26,7 +26,7 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 // API ENDPOINT FOR ACCEPTING DATA 
-const char* device_status = "http://192.168.43.71:34463/api/get_water_temp";
+const char* device_status = "http://192.168.1.6:34463/api/get_water_temp";
 
 WiFiClient client;
 
@@ -99,7 +99,7 @@ float waterTemp(){
 void automaticallyRunMotor(){
   
   // CHECK IF MAIN CONTAINER IS EMPTY AND THE WATER TEMP IS HOT
-  if ( isMainContainerEmpty() || waterTemp() > 32 ){
+  if ( isMainContainerEmpty() || waterTemp() > 40 ){
 
     turnRelayOn();
 

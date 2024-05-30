@@ -4,8 +4,8 @@
 #include <DallasTemperature.h>
 
 //  ACCESS POINT CREDENTIALS
-const char* ssid = "PLDTHOMEFIBRgky9c"; 
-const char* password = "PLDTWIFIry2fp";
+const char* ssid = ""; 
+const char* password = "";
 
 // SECRET KEY
 const char* SECRET_KEY = "\"ra^SWIXh(@TJe2+Js4aFfS&X+Lk3yf7\"";
